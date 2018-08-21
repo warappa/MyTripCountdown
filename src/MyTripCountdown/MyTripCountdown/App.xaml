@@ -3,9 +3,99 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     xmlns:styles="clr-namespace:MyTripCountdown.Styles"
-    x:Class="MyTripCountdown.App">
+    x:Class="MyTripCountdown.App"
+    xmlns:css="clr-namespace:XamlCSS;assembly=XamlCSS"
+    xmlns:xcss="clr-namespace:XamlCSS.XamarinForms;assembly=XamlCSS.XamarinForms"
+    xcss:Css.StyleSheet="{DynamicResource aaa}"  
+    >
     <Application.Resources>
         <ResourceDictionary>
+            <css:StyleSheet x:Key="aaa">
+                <css:StyleSheet.Content xml:space="preserve">
+                    <x:String>
+                        <![CDATA[ 
+                        $pink: #DB1D8B;
+                        $blue: #5098CD;
+                        
+                        .trip-title {
+                            FontFamily: "sourcesanspro-semibold.ttf#Source Sans";
+                            FontSize: 40;
+                            TextColor: Black;
+                            HorizontalOptions: Center;
+                            FontAttributes: Bold;
+                            LineBreakMode: WordWrap;
+                            Margin: 48, 0, 48, 12;
+                        }
+                        
+                        .image-container {
+                            Grid.Row: 1;
+                        }
+                
+                        .big-countdown {
+                            FontFamily: "sourcesanspro-regular.ttf#Source Sans";
+                            FontSize: 44;
+                            TextColor: Black;
+                            HorizontalOptions: Center;
+                        }
+                
+                        .small-countdown {
+                            FontFamily: sourcesanspro-regular.ttf#Source Sans;
+                            FontSize: 20;
+                            TextColor: Gray;
+                            HorizontalOptions: Center;
+                        }
+                
+                        *|MyTripCountdownView>Grid {
+                                BackgroundColor: White;
+                        }
+                        
+                        *|CachedImage {
+                            Aspect: AspectFit;
+                            Margin: 12;
+                        }
+                        
+                        *|CircleCountdown {
+                            VerticalOptions: FillAndExpand;
+                            HorizontalOptions: FillAndExpand;
+                            StrokeWidth: 10;
+                            ProgressStartColor: $pink; 
+                            ProgressEndColor: $blue;
+                        }
+                        
+                        .countdown-time {
+                            Grid.Row: 2;
+                            RowSpacing: 0; 
+                            Margin: 60, 24;
+                        }
+                        
+                        .footer {
+                            Grid.Row: 3;
+                            Margin: 0, 0, 0, 48;
+                        
+                            Grid {
+                                Margin: 84, 12;
+                            }
+                        
+                            *|GradientButton {
+                                HeightRequest: 60;
+                                CornerRadius: 96;
+                                StartColor: $pink;
+                                EndColor: $blue;
+                            }
+                        
+                            Label {
+                                FontFamily: sourcesanspro-regular.ttf#Source Sans;
+                                FontSize: 24;
+                                TextColor: White;
+                                HorizontalOptions: Center;
+                                VerticalOptions: Center;
+                                InputTransparent: True;
+                            }
+                        }
+                        ]]>
+                        </x:String>
+            </css:StyleSheet.Content>
+            </css:StyleSheet>
             <ResourceDictionary.MergedDictionaries>
                 <styles:Colors />
                 <styles:Fonts />

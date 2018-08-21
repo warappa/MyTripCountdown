@@ -9,6 +9,8 @@ namespace MyTripCountdown
     {
         public App()
         {
+            XamlCSS.XamarinForms.Css.Initialize(this);
+
             InitializeComponent();
 
             MainPage = new CustomNavigationPage(new MyTripCountdownView());
