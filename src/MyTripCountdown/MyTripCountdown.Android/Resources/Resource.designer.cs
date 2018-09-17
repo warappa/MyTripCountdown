@@ -769,7 +769,13 @@ namespace MyTripCountdown.Droid
 			global::Skor.Controls.Droid.Resource.Drawable.abc_textfield_search_material = global::MyTripCountdown.Droid.Resource.Drawable.abc_textfield_search_material;
 			global::Skor.Controls.Droid.Resource.Drawable.abc_vector_test = global::MyTripCountdown.Droid.Resource.Drawable.abc_vector_test;
 			global::Skor.Controls.Droid.Resource.Drawable.avd_hide_password = global::MyTripCountdown.Droid.Resource.Drawable.avd_hide_password;
+			global::Skor.Controls.Droid.Resource.Drawable.avd_hide_password_1 = global::MyTripCountdown.Droid.Resource.Drawable.avd_hide_password_1;
+			global::Skor.Controls.Droid.Resource.Drawable.avd_hide_password_2 = global::MyTripCountdown.Droid.Resource.Drawable.avd_hide_password_2;
+			global::Skor.Controls.Droid.Resource.Drawable.avd_hide_password_3 = global::MyTripCountdown.Droid.Resource.Drawable.avd_hide_password_3;
 			global::Skor.Controls.Droid.Resource.Drawable.avd_show_password = global::MyTripCountdown.Droid.Resource.Drawable.avd_show_password;
+			global::Skor.Controls.Droid.Resource.Drawable.avd_show_password_1 = global::MyTripCountdown.Droid.Resource.Drawable.avd_show_password_1;
+			global::Skor.Controls.Droid.Resource.Drawable.avd_show_password_2 = global::MyTripCountdown.Droid.Resource.Drawable.avd_show_password_2;
+			global::Skor.Controls.Droid.Resource.Drawable.avd_show_password_3 = global::MyTripCountdown.Droid.Resource.Drawable.avd_show_password_3;
 			global::Skor.Controls.Droid.Resource.Drawable.design_bottom_navigation_item_background = global::MyTripCountdown.Droid.Resource.Drawable.design_bottom_navigation_item_background;
 			global::Skor.Controls.Droid.Resource.Drawable.design_fab_background = global::MyTripCountdown.Droid.Resource.Drawable.design_fab_background;
 			global::Skor.Controls.Droid.Resource.Drawable.design_ic_visibility = global::MyTripCountdown.Droid.Resource.Drawable.design_ic_visibility;
@@ -4610,8 +4616,26 @@ namespace MyTripCountdown.Droid
 			// aapt resource value: 0x7f020053
 			public const int avd_hide_password = 2130837587;
 			
+			// aapt resource value: 0x7f020131
+			public const int avd_hide_password_1 = 2130837809;
+			
+			// aapt resource value: 0x7f020132
+			public const int avd_hide_password_2 = 2130837810;
+			
+			// aapt resource value: 0x7f020133
+			public const int avd_hide_password_3 = 2130837811;
+			
 			// aapt resource value: 0x7f020054
 			public const int avd_show_password = 2130837588;
+			
+			// aapt resource value: 0x7f020134
+			public const int avd_show_password_1 = 2130837812;
+			
+			// aapt resource value: 0x7f020135
+			public const int avd_show_password_2 = 2130837813;
+			
+			// aapt resource value: 0x7f020136
+			public const int avd_show_password_3 = 2130837814;
 			
 			// aapt resource value: 0x7f020055
 			public const int design_bottom_navigation_item_background = 2130837589;

@@ -1,4 +1,5 @@
 using MyTripCountdown.Views;
+using Skor.Controls;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 

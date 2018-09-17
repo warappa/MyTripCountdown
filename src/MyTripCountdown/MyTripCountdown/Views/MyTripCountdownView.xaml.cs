@@ -1,5 +1,6 @@
 ﻿using MyTripCountdown.ViewModels;
 using MyTripCountdown.ViewModels.Base;
+using Skor.Controls;
 using Xamarin.Forms;
 
 namespace MyTripCountdown.Views
@@ -25,6 +26,11 @@ namespace MyTripCountdown.Views
             base.OnDisappearing();
             var vm = BindingContext as BaseViewModel;
             await vm?.UnloadAsync();
+        }
+
+        private void GradientButton_Clicked(object sender, System.EventArgs e)
+        {
+            (sender as GradientButton).EndColor = Color.BlueViolet;
         }
     }
 }

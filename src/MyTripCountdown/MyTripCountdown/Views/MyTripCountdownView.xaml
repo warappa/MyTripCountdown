@@ -88,7 +88,7 @@
             </Grid>
             <StackLayout xcss:Css.Class="footer">
                 <Grid>
-                    <skor:GradientButton Command="{Binding RestartCommand}"/>
+                    <controls:GradientButton Clicked="GradientButton_Clicked" Command="{Binding RestartCommand}"/>
                     <Label Text="RESTART" />
                 </Grid>
             </StackLayout>

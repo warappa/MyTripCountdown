@@ -6,22 +6,23 @@
     x:Class="MyTripCountdown.App"
     xmlns:css="clr-namespace:XamlCSS;assembly=XamlCSS"
     xmlns:xcss="clr-namespace:XamlCSS.XamarinForms;assembly=XamlCSS.XamarinForms"
-    xcss:Css.StyleSheet="{DynamicResource aaa}"  
+    xcss:Css.StyleSheet="{DynamicResource style}"  
     >
     <Application.Resources>
         <ResourceDictionary>
-            <css:StyleSheet x:Key="aaa">
+            <css:StyleSheet x:Key="style">
                 <css:StyleSheet.Content xml:space="preserve">
                     <x:String>
                         <![CDATA[ 
-                        $pink: #DB1D8B;
+                        $pink: Green;
                         $blue: #5098CD;
                         
                         .trip-title {
-                            FontFamily: "sourcesanspro-semibold.ttf#Source Sans";
-                            FontSize: 40;
+                            FontFamily: "sourcesanspro-semibold.ttf#Source Sans Pro Semibold";
+                            FontSize: 50;
                             TextColor: Black;
                             HorizontalOptions: Center;
+                            HorizontalTextAlignment: Center;
                             FontAttributes: Bold;
                             LineBreakMode: WordWrap;
                             Margin: 48, 0, 48, 12;
@@ -32,14 +33,14 @@
                         }
                 
                         .big-countdown {
-                            FontFamily: "sourcesanspro-regular.ttf#Source Sans";
+                            FontFamily: "sourcesanspro-regular.ttf#Source Sans Pro";
                             FontSize: 44;
                             TextColor: Black;
                             HorizontalOptions: Center;
                         }
                 
                         .small-countdown {
-                            FontFamily: sourcesanspro-regular.ttf#Source Sans;
+                            FontFamily: "sourcesanspro-regular.ttf#Source Sans Pro";
                             FontSize: 20;
                             TextColor: Gray;
                             HorizontalOptions: Center;
@@ -58,8 +59,8 @@
                             VerticalOptions: FillAndExpand;
                             HorizontalOptions: FillAndExpand;
                             StrokeWidth: 10;
-                            ProgressStartColor: $pink; 
-                            ProgressEndColor: $blue;
+                            ProgressStartColor: $blue; 
+                            ProgressEndColor: $pink;
                         }
                         
                         .countdown-time {
@@ -84,14 +85,16 @@
                             }
                         
                             Label {
-                                FontFamily: sourcesanspro-regular.ttf#Source Sans;
+                                FontFamily: "sourcesanspro-regular.ttf#Source Sans Pro";
                                 FontSize: 24;
                                 TextColor: White;
                                 HorizontalOptions: Center;
                                 VerticalOptions: Center;
                                 InputTransparent: True;
                             }
+                        
                         }
+                        
                         ]]>
                         </x:String>
             </css:StyleSheet.Content>
