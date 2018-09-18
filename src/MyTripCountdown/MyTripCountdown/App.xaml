@@ -14,13 +14,14 @@
                 <css:StyleSheet.Content xml:space="preserve">
                     <x:String>
                         <![CDATA[ 
-                        $pink: Green;
+                        
+                        $pink: #DB1D8B;
                         $blue: #5098CD;
                         
                         .trip-title {
                             FontFamily: "sourcesanspro-semibold.ttf#Source Sans Pro Semibold";
                             FontSize: 50;
-                            TextColor: Black;
+                            TextColor: #333;
                             HorizontalOptions: Center;
                             HorizontalTextAlignment: Center;
                             FontAttributes: Bold;
@@ -46,16 +47,19 @@
                             HorizontalOptions: Center;
                         }
                 
-                        *|MyTripCountdownView>Grid {
-                                BackgroundColor: White;
+                        /* MyTripCountdown.Views */
+                        MyTripCountdownView>Grid {
+                            BackgroundColor: White;
                         }
                         
-                        *|CachedImage {
+                        /* FFImageLoading.Forms */
+                        CachedImage {
                             Aspect: AspectFit;
                             Margin: 12;
                         }
                         
-                        *|CircleCountdown {
+                        /* in MyTripCountdown.Controls */
+                        CircleCountdown {
                             VerticalOptions: FillAndExpand;
                             HorizontalOptions: FillAndExpand;
                             StrokeWidth: 10;
@@ -77,7 +81,8 @@
                                 Margin: 84, 12;
                             }
                         
-                            *|GradientButton {
+                            /* in MyTripCountdown.Controls */
+                            GradientButton {
                                 HeightRequest: 60;
                                 CornerRadius: 96;
                                 StartColor: $pink;
@@ -92,7 +97,6 @@
                                 VerticalOptions: Center;
                                 InputTransparent: True;
                             }
-                        
                         }
                         
                         ]]>
