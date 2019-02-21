@@ -5,14 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="LiveXAML" Version="2.1.36" />
-    <PackageReference Include="SkiaSharp" Version="1.60.2" />
-    <PackageReference Include="SkiaSharp.Views.Forms" Version="1.60.2" />
+    <PackageReference Include="LiveXAML" Version="2.1.68" />
+    <PackageReference Include="SkiaSharp" Version="1.68.0" />
+    <PackageReference Include="SkiaSharp.Views.Forms" Version="1.68.0" />
     <PackageReference Include="Skor.Controls" Version="0.0.2-alpha1" />
-    <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.3.840" />
-    <PackageReference Include="Xamarin.FFImageLoading.Transformations" Version="2.4.3.840" />
-    <PackageReference Include="Xamarin.Forms" Version="3.1.0.697729" />
-    <PackageReference Include="XamlCSS.XamarinForms" Version="2.2.0-pre5" />
+    <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.4.859" />
+    <PackageReference Include="Xamarin.FFImageLoading.Transformations" Version="2.4.4.859" />
+    <PackageReference Include="Xamarin.Forms" Version="3.5.0.169047" />
+    <PackageReference Include="XamlCSS.XamarinForms" Version="2.2.0" />
   </ItemGroup>
 
   <ItemGroup>
