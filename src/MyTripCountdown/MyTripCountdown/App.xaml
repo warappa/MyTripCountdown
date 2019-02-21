@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Application 
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
@@ -6,6 +6,7 @@
     x:Class="MyTripCountdown.App"
     xmlns:css="clr-namespace:XamlCSS;assembly=XamlCSS"
     xmlns:xcss="clr-namespace:XamlCSS.XamarinForms;assembly=XamlCSS.XamarinForms"
+    xmlns:local="clr-namespace:MyTripCountdown;assembly=MyTripCountdown"
     xcss:Css.StyleSheet="{DynamicResource style}"  
     >
     <Application.Resources>
@@ -14,13 +15,19 @@
                 <css:StyleSheet.Content xml:space="preserve">
                     <x:String>
                         <![CDATA[ 
-                        $pink: Green;
+                        
+                        @namespace ffimageloading "clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms";
+                        @namespace skor "clr-namespace:Skor.Controls;assembly=Skor.Controls";
+                        @namespace local "clr-namespace:MyTripCountdown.Views;assembly=MyTripCountdown";
+                        @namespace controls "clr-namespace:MyTripCountdown.Controls;assembly=MyTripCountdown";
+                        
+                        $pink: #DB1D8B;
                         $blue: #5098CD;
                         
                         .trip-title {
                             FontFamily: "sourcesanspro-semibold.ttf#Source Sans Pro Semibold";
                             FontSize: 50;
-                            TextColor: Black;
+                            TextColor: #333;
                             HorizontalOptions: Center;
                             HorizontalTextAlignment: Center;
                             FontAttributes: Bold;
@@ -35,7 +42,7 @@
                         .big-countdown {
                             FontFamily: "sourcesanspro-regular.ttf#Source Sans Pro";
                             FontSize: 44;
-                            TextColor: Black;
+                            TextColor: $blue;
                             HorizontalOptions: Center;
                         }
                 
@@ -46,16 +53,19 @@
                             HorizontalOptions: Center;
                         }
                 
-                        *|MyTripCountdownView>Grid {
-                                BackgroundColor: White;
+                        /* MyTripCountdown.Views */
+                        local|MyTripCountdownView>Grid {
+                            BackgroundColor: White;
                         }
                         
-                        *|CachedImage {
+                        /* FFImageLoading.Forms */
+                        ffimageloading|CachedImage {
                             Aspect: AspectFit;
                             Margin: 12;
                         }
                         
-                        *|CircleCountdown {
+                        /* in MyTripCountdown.Controls */
+                        controls|CircleCountdown {
                             VerticalOptions: FillAndExpand;
                             HorizontalOptions: FillAndExpand;
                             StrokeWidth: 10;
@@ -77,7 +87,8 @@
                                 Margin: 84, 12;
                             }
                         
-                            *|GradientButton {
+                            /* in MyTripCountdown.Controls */
+                            controls|GradientButton {
                                 HeightRequest: 60;
                                 CornerRadius: 96;
                                 StartColor: $pink;
@@ -92,7 +103,6 @@
                                 VerticalOptions: Center;
                                 InputTransparent: True;
                             }
-                        
                         }
                         
                         ]]>
